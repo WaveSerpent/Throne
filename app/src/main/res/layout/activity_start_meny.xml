@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#202040"
+    android:padding="50dp"
+    tools:context=".StartMenu">
+
+    <Button
+        android:id="@+id/BT_START"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start game"
+        android:layout_above="@id/BT_SETTINGS"
+        android:padding="20dp"
+        android:onClick="onStartButtonClick"
+        />
+    <Button
+        android:id="@+id/BT_SETTINGS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_above="@id/BT_EXIT"
+        />
+    <Button
+        android:id="@+id/BT_EXIT"
+        android:onClick="onExitButtonClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:text="EXIT"
+        android:padding="20dp"
+        />
+
+</RelativeLayout>
